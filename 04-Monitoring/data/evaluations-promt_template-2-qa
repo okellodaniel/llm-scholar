@@ -1,0 +1,151 @@
+Relevance,Explanation
+RELEVANT,"The generated answer directly addresses the question asked, providing accurate and pertinent information that aligns well with the inquiry."
+NON_RELEVANT,The generated answer does not address the question or relate to its content in any meaningful way.
+RELEVANT,"The generated answer directly addresses the question, providing clear and appropriate information that aligns well with the inquiry."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but may not fully answer it or could miss key details essential for a complete understanding.
+PARTLY_RELEVANT,The generated answer partially addresses the question but may not fully answer it or provide complete context.
+PARTLY_RELEVANT,The generated answer provides some information related to the question but does not fully address all aspects or specifics that the question implies.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not cover all relevant points needed for a comprehensive understanding.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that relates to the core of the inquiry."
+RELEVANT,The generated answer directly addresses the question and provides information that is accurate and pertinent to the topic at hand.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not comprehensively cover all necessary points or may include tangential information that detracts from its overall relevance.
+RELEVANT,"The generated answer directly addresses the question asked, providing accurate and pertinent information that aligns with the inquiry."
+PARTLY_RELEVANT,The generated answer provides some information related to the question but does not fully address all aspects or may include some irrelevant information. It requires additional context or details to be considered fully relevant.
+PARTLY_RELEVANT,The generated answer provides some information that addresses the question but lacks completeness or depth in certain aspects. It may cover relevant points but does not fully satisfy the query or could lead to misinterpretation.
+PARTLY_RELEVANT,The generated answer somewhat addresses the question but lacks completeness or direct correlation to the specific aspects asked. It may offer related information but misses key details necessary for a fully relevant response.
+RELEVANT,The generated answer directly addresses the question by providing pertinent information that aligns well with the context provided.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass all key components or details required for a complete response.
+RELEVANT,"The generated answer directly addresses the question posed, providing accurate and pertinent information that aligns well with what was asked."
+RELEVANT,"The generated answer directly addresses the question, providing pertinent information that is aligned with the inquiry."
+RELEVANT,"The generated answer directly addresses the question posed, providing relevant information that pertains specifically to the topic inquired about."
+RELEVANT,"The generated answer directly addresses the question by providing focused, accurate information that aligns well with the inquiry presented."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but does not fully capture all key points or details required for a comprehensive response. Therefore, it provides some useful information but lacks completeness."
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns well with the inquiry."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass all elements or provide a comprehensive response.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not cover all necessary points or contains inaccuracies that diminish its overall usefulness.
+PARTLY_RELEVANT,"The generated answer partially addresses the question but lacks comprehensive details or may only cover some aspects of the inquiry. While there is relevant information present, additional context or completeness is needed for a full response."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass all necessary elements or provide a complete response.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and helpful information that aligns with the context of the inquiry."
+NON_RELEVANT,The generated answer does not address the question or provides information that is completely unrelated to the topic at hand.
+RELEVANT,"The generated answer directly addresses the question by providing accurate and pertinent information, demonstrating a clear understanding of the topic."
+NON_RELEVANT,"The generated answer does not address the question at all, and there is no connection between the content of the answer and the inquiry posed."
+NON_RELEVANT,"The generated answer does not address the question at all, providing unrelated information that does not help in understanding or answering the inquiry."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully answer it or lacks sufficient detail to be considered relevant. Key points may be missing or not directly aligning with the core inquiry.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns well with the user's query."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass all necessary details or context required for a complete and accurate response.
+RELEVANT,"The generated answer directly addresses the question, providing clear and accurate information that aligns with the topic. It demonstrates understanding and relevance to the inquiry posed."
+RELEVANT,"The generated answer directly addresses the question, providing accurate, specific, and contextual information that aligns well with the inquiry posed."
+RELEVANT,"The generated answer directly addresses the question, providing pertinent information and insights that are aligned with the inquiry."
+RELEVANT,"The generated answer directly addresses the question and provides pertinent information that aligns with the inquiry, making it highly applicable and useful."
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that fully aligns with what was asked."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but fails to fully encompass all key elements necessary for a complete response.
+NON_RELEVANT,"The generated answer does not address the question at all, as it lacks related content or context. There is no connection between the question and the answer provided."
+PARTLY_RELEVANT,"The generated answer contains some elements that relate to the question, but it does not fully address all the aspects needed for a complete response. It provides useful information but lacks details that would make it fully relevant."
+PARTLY_RELEVANT,The generated answer touches on some aspects related to the question but does not fully address all the nuances or specific points requested in the question. It provides partial information that may be useful but lacks completeness.
+PARTLY_RELEVANT,The generated answer provides some information relevant to the question but does not fully address all aspects or nuances required to completely satisfy the inquiry.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully cover all key points or may include tangential information that detracts from a complete response.
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but misses key details or specific context that would make it fully relevant. It may provide useful information, but it does not comprehensively answer the question asked."
+PARTLY_RELEVANT,"The generated answer contains some relevant information that addresses part of the question but does not fully encompass all aspects needed for a comprehensive response. It may touch on key points, but lacks depth or completeness."
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns with the context and intent of the inquiry."
+RELEVANT,The generated answer directly addresses the question and provides relevant information that satisfies the inquiry.
+RELEVANT,"The generated answer directly addresses the question posed, providing accurate and relevant information that pertains to the subject matter inquired."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but does not provide a comprehensive or complete response. It may contain useful information, but it lacks depth or misses key points necessary for a fully relevant answer."
+PARTLY_RELEVANT,"The generated answer provides some information that relates to the question, but it does not fully address all aspects or context of the question, leaving gaps in the information provided."
+NON_RELEVANT,"The generated answer does not address the question at all or is completely off-topic, failing to provide any relevant information or context related to the query."
+RELEVANT,"The generated answer directly addresses the question and provides specific information that pertains to the query, making it a useful and accurate response."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question, but it lacks comprehensive coverage of all key points or may include tangential information that reduces its overall relevance."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but doesn't fully cover all relevant details or misses key points that would provide a complete understanding.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that fully satisfies the inquiry."
+NON_RELEVANT,"The generated answer does not address the question at all, providing information that is unrelated or completely off-topic."
+RELEVANT,The generated answer directly addresses the question and provides accurate information in a clear and concise manner.
+RELEVANT,The generated answer directly addresses the question and provides relevant information that aligns with what was asked.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but may lack comprehensive coverage or contain information that strays from the main topic.
+PARTLY_RELEVANT,"The generated answer contains some information related to the question but does not fully address all aspects of it, leading to partial relevance."
+PARTLY_RELEVANT,"The generated answer contains some information related to the question but may not fully address all aspects or provide a complete response. There are elements that are on-topic, yet some critical points may be missing or inadequately covered."
+RELEVANT,The generated answer directly addresses the question and provides comprehensive information that aligns with the expected response.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns with what is being asked."
+RELEVANT,"The generated answer directly addresses the question posed, providing relevant information that accurately answers it without unnecessary details."
+RELEVANT,The generated answer directly addresses the question and provides accurate and contextual information that aligns well with what was asked.
+RELEVANT,"The generated answer directly addresses the question asked, providing accurate and pertinent information related to the topic. It effectively conveys the necessary details that the question seeks, making it a clear and useful response."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass the main point or provide a complete response. Additional context or information is necessary for a more direct relevance to the question.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and comprehensive information that aligns well with the inquiry."
+RELEVANT,"The generated answer addresses the question directly and provides pertinent information, making it useful and aligned with the query."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully cover all pertinent details or may include unrelated information.
+PARTLY_RELEVANT,"The generated answer addresses the question but does not fully cover all aspects or details expected in a complete response, thereby providing some relevant information but lacking comprehensiveness."
+NON_RELEVANT,"The generated answer does not address the question at all, missing any pertinent information or context related to the inquiry."
+PARTLY_RELEVANT,"The generated answer contains some relevant information related to the question, but it lacks comprehensive details or may introduce unrelated elements that dilute the answer's overall effectiveness."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but lacks comprehensive detail or fails to fully capture the main intent of the query. It may provide useful information but does not fully satisfy the user's needs.
+RELEVANT,The generated answer directly addresses the question by providing accurate and pertinent information relevant to the topic at hand. The content matches the expected context and details requested in the question.
+PARTLY_RELEVANT,"The generated answer contains some relevant information related to the question but may lack comprehensive detail or clarity. While it partially addresses the inquiry, additional context or specifics are needed for full relevance."
+RELEVANT,"The generated answer directly addresses the question, providing the necessary information or context that pertains to the inquiry."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but lacks depth or misses key points, making it only partially useful for a complete understanding."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully cover all necessary details or aspects required for a comprehensive response.
+RELEVANT,The generated answer directly addresses the question and provides relevant information that is informative and aligns well with what was asked.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns well with the inquiry."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but does not fully cover all the necessary points, leading to an incomplete response."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question but does not fully cover all dimensions or details needed to provide a complete response. There are relevant points, but additional context or information is required for full relevance."
+RELEVANT,"The generated answer directly addresses the key aspects of the question, providing accurate and pertinent information that is aligned with what was asked."
+NON_RELEVANT,"The generated answer does not address the question at all, providing information that is unrelated to the inquiry."
+RELEVANT,The generated answer directly addresses the question by providing specific information or insights pertinent to the subject matter at hand.
+PARTLY_RELEVANT,The generated answer touches on some aspects of the question but does not fully address all key components or may provide some extraneous information that detracts from its overall relevance.
+RELEVANT,"The generated answer directly addresses the question, providing clear and pertinent information that aligns well with the inquiry posed."
+RELEVANT,"The generated answer directly addresses the question posed, providing clear and pertinent information that aligns well with the asked topic."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question, but lacks sufficient detail or completeness to fully answer it. It partially aligns with the inquiry but does not encompass all necessary elements for a definitive response."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully cover all key points or details necessary for a complete response. It provides some useful information but lacks depth or clarity in certain areas.
+RELEVANT,The generated answer directly addresses the question and provides accurate and informative content that is clearly related to the topic at hand.
+PARTLY_RELEVANT,"The generated answer contains some information related to the question but does not fully address the core aspects or provide a comprehensive response. There may be useful details, but key elements are missing."
+RELEVANT,The generated answer directly addresses the question and provides information that is pertinent and useful in understanding the topic. It effectively captures the key elements of what was asked.
+RELEVANT,"The generated answer directly addresses the question by providing accurate and pertinent information related to the inquiry, demonstrating a thorough understanding of the topic."
+RELEVANT,"The generated answer directly addresses the question by providing specific, accurate information that aligns with the inquiry, thereby fulfilling the user's request effectively."
+NON_RELEVANT,"The generated answer does not address the question at all, lacking any related content or context that pertains to the topic."
+RELEVANT,The generated answer directly addresses the question and provides the information that is explicitly sought. The content is pertinent and offers a complete response based on the context provided.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that aligns well with the inquiry posed."
+RELEVANT,The generated answer directly addresses the question and provides clear and accurate information that pertains to the topic being asked about.
+NON_RELEVANT,"The generated answer does not address the question in any meaningful way, providing information that is unrelated or completely off-topic."
+NON_RELEVANT,"The generated answer does not address the question at all, lacking any contextual or topical connection to the subject matter."
+RELEVANT,"The generated answer directly addresses the question with relevant information and useful examples, providing a clear and concise response."
+NON_RELEVANT,The generated answer does not address the question at all and contains information unrelated to it.
+RELEVANT,"The generated answer directly addresses the question posed, providing a clear and accurate response that aligns well with the expected information."
+NON_RELEVANT,The generated answer does not address the question at all and provides information or context unrelated to the inquiry.
+RELEVANT,"The generated answer directly addresses the question, providing information that is pertinent and accurate in the context required."
+RELEVANT,The generated answer directly addresses the question and provides pertinent information that is aligned with the query's intent.
+RELEVANT,The generated answer addresses the question directly and provides accurate information that is pertinent to the topic being asked.
+RELEVANT,"The generated answer directly addresses the question, providing accurate and pertinent information that fully aligns with the context and intent of the inquiry."
+RELEVANT,"The generated answer directly addresses the question and provides accurate information related to it, demonstrating a clear understanding of the topic."
+NON_RELEVANT,"The generated answer does not address any aspect of the question, making it completely unrelated to the inquiry."
+RELEVANT,The generated answer directly addresses the question and provides accurate and pertinent information that is aligned with the query.
+RELEVANT,"The generated answer directly addresses the question with appropriate information, providing a clear and comprehensive response that aligns well with the user’s inquiry."
+NON_RELEVANT,"The generated answer does not address the question in any way, providing information that is completely unrelated to the topic or context established by the question."
+RELEVANT,"The generated answer directly addresses the question, providing accurate and specific information that corresponds well with what was asked."
+RELEVANT,The generated answer directly addresses the question and provides accurate and relevant information that pertains to the topic being inquired about.
+NON_RELEVANT,The generated answer does not address the question at all and does not provide any pertinent information that relates to it.
+RELEVANT,"The generated answer directly addresses the question and provides comprehensive information that aligns with the inquiry, demonstrating a strong connection between the content and the context."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully encompass all relevant details or may include some inaccuracies that limit its usefulness.
+NON_RELEVANT,"The generated answer does not address the question at all, providing information that is unrelated or off-topic."
+RELEVANT,"The generated answer directly addresses the question posed, providing information that is pertinent and useful in the context of what was asked. It effectively meets the requirements of the inquiry."
+RELEVANT,The generated answer directly addresses the question and provides accurate information that meets the inquiry's needs.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but fails to cover key details or provide a complete response.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but misses key details or context that are crucial for a comprehensive understanding.
+RELEVANT,"The generated answer directly addresses the question asked, providing pertinent information that is both accurate and useful in the context."
+RELEVANT,"The generated answer directly addresses the question, providing specific and pertinent information that relates to the inquiry posed."
+RELEVANT,The generated answer directly addresses the question and provides specific information relevant to the topic being asked about.
+RELEVANT,"The generated answer directly addresses the question, providing an accurate and detailed response that is aligned with the inquiry."
+NON_RELEVANT,The generated answer does not address the question in any meaningful way or provides information unrelated to the topic.
+RELEVANT,"The generated answer directly addresses the question and provides pertinent information that is aligned with the query. It thoroughly covers the main aspects of the topic, demonstrating a clear understanding of what was asked."
+NON_RELEVANT,"The generated answer does not address the question asked, offering information or context that is completely unrelated to the topic."
+PARTLY_RELEVANT,"The generated answer contains some information related to the question but does not fully address all aspects of it. It may provide partial insights or context, leading to a partial relevance classification."
+RELEVANT,"The generated answer directly addresses the question, providing specific information that is aligned with the inquiry, thus demonstrating a clear connection and relevance."
+RELEVANT,"The generated answer directly addresses the question and provides the necessary information, making it useful and applicable to the inquiry."
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but does not fully capture the complete context or details needed for a thorough response.
+NON_RELEVANT,"The generated answer does not address the question at all, providing information that is completely unrelated to the topic or context of the query."
+RELEVANT,The generated answer addresses the question directly and provides comprehensive information that is on topic.
+NON_RELEVANT,"The generated answer does not address the question in any meaningful way, either by lacking relevant content or by being completely off-topic."
+RELEVANT,"The generated answer directly addresses the question asked, providing accurate and pertinent information that aligns well with the inquiry."
+PARTLY_RELEVANT,"The generated answer addresses some aspects of the question, but it lacks completeness or some critical details needed for a fully satisfactory response."
+PARTLY_RELEVANT,The generated answer partially addresses the question but fails to provide comprehensive or detailed information that directly relates to all aspects of the inquiry.
+RELEVANT,The generated answer directly addresses the question and provides accurate information that is pertinent to the topic at hand.
+PARTLY_RELEVANT,The generated answer addresses some aspects of the question but may not fully cover all critical elements or provide a comprehensive response required for a complete understanding.
+RELEVANT,The generated answer addresses the question directly and provides clear and pertinent information that aligns with what is being asked.
+NON_RELEVANT,"The generated answer does not address the question at all, providing information that is completely unrelated to the topic or inquiry posed."
+RELEVANT,"The generated answer directly addresses the specific aspects of the question, providing accurate and pertinent information that aligns well with the inquiry."
+RELEVANT,"The generated answer directly addresses the question, providing relevant information that aligns well with the inquiry. The content is informative and useful for understanding the topic at hand."
