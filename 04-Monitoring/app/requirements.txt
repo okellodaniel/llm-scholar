@@ -1,0 +1,5 @@
+streamlit==1.36.0
+elasticsearch
+openai
+psycopg2-binary
+python-dotenv
