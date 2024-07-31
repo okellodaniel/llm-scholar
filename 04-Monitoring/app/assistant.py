@@ -106,10 +106,10 @@ def llm(prompt, model_choice):
         }
     else:
         raise ValueError(f"Unknown model choice: {model_choice}")
-    
+
     end_time = time.time()
     response_time = end_time - start_time
-    
+
     return answer, tokens, response_time
 
 
@@ -136,7 +136,7 @@ def evaluate_relevance(question, answer):
 
     prompt = prompt_template.format(question=question, answer=answer)
     evaluation, tokens, _ = llm(prompt, 'openai/gpt-4o-mini')
-    
+
     try:
         json_eval = json.loads(evaluation)
         return json_eval['Relevance'], json_eval['Explanation'], tokens
@@ -148,9 +148,11 @@ def calculate_openai_cost(model_choice, tokens):
     openai_cost = 0
 
     if model_choice == 'openai/gpt-3.5-turbo':
-        openai_cost = (tokens['prompt_tokens'] * 0.0015 + tokens['completion_tokens'] * 0.002) / 1000
+        openai_cost = (tokens['prompt_tokens'] * 0.0015 +
+                       tokens['completion_tokens'] * 0.002) / 1000
     elif model_choice in ['openai/gpt-4o', 'openai/gpt-4o-mini']:
-        openai_cost = (tokens['prompt_tokens'] * 0.03 + tokens['completion_tokens'] * 0.06) / 1000
+        openai_cost = (tokens['prompt_tokens'] * 0.03 +
+                       tokens['completion_tokens'] * 0.06) / 1000
 
     return openai_cost
 
@@ -158,17 +160,18 @@ def calculate_openai_cost(model_choice, tokens):
 def get_answer(query, course, model_choice, search_type):
     if search_type == 'Vector':
         vector = model.encode(query)
-        search_results = elastic_search_knn('question_text_vector', vector, course)
+        search_results = elastic_search_knn(
+            'question_text_vector', vector, course)
     else:
         search_results = elastic_search_text(query, course)
 
     prompt = build_prompt(query, search_results)
     answer, tokens, response_time = llm(prompt, model_choice)
-    
+
     relevance, explanation, eval_tokens = evaluate_relevance(query, answer)
 
     openai_cost = calculate_openai_cost(model_choice, tokens)
- 
+
     return {
         'answer': answer,
         'response_time': response_time,
