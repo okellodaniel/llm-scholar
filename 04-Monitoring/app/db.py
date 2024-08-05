@@ -4,7 +4,7 @@ from psycopg2.extras import DictCursor
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-tz = ZoneInfo("Europe/Berlin")
+tz = ZoneInfo("Africa/Kampala")
 
 
 def get_db_connection():
@@ -14,6 +14,7 @@ def get_db_connection():
         user=os.getenv("POSTGRES_USER", "your_username"),
         password=os.getenv("POSTGRES_PASSWORD", "your_password"),
     )
+
 
 def init_db():
     conn = get_db_connection()
@@ -54,6 +55,7 @@ def init_db():
     finally:
         conn.close()
 
+
 def save_conversation(conversation_id, question, answer_data, course, timestamp=None):
     if timestamp is None:
         timestamp = datetime.now(tz)
@@ -89,5 +91,55 @@ def save_conversation(conversation_id, question, answer_data, course, timestamp=
                 ),
             )
         conn.commit()
+    finally:
+        conn.close()
+
+
+def save_feedback(conversation_id, feedback, timestamp=None):
+    if timestamp is None:
+        timestamp = datetime.now(tz)
+
+    conn = get_db_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(
+                "INSERT INTO feedback (conversation_id, feedback, timestamp) VALUES (%s, %s, COALESCE(%s, CURRENT_TIMESTAMP))",
+                (conversation_id, feedback, timestamp),
+            )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_recent_conversations(limit=5, relevance=None):
+    conn = get_db_connection()
+    try:
+        with conn.cursor(cursor_factory=DictCursor) as cur:
+            query = """
+                SELECT c.*, f.feedback
+                FROM conversations c
+                LEFT JOIN feedback f ON c.id = f.conversation_id
+            """
+            if relevance:
+                query += f" WHERE c.relevance = '{relevance}'"
+            query += " ORDER BY c.timestamp DESC LIMIT %s"
+
+            cur.execute(query, (limit,))
+            return cur.fetchall()
+    finally:
+        conn.close()
+
+
+def get_feedback_stats():
+    conn = get_db_connection()
+    try:
+        with conn.cursor(cursor_factory=DictCursor) as cur:
+            cur.execute("""
+                SELECT 
+                    SUM(CASE WHEN feedback > 0 THEN 1 ELSE 0 END) as thumbs_up,
+                    SUM(CASE WHEN feedback < 0 THEN 1 ELSE 0 END) as thumbs_down
+                FROM feedback
+            """)
+            return cur.fetchone()
     finally:
         conn.close()
