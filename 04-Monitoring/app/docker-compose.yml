@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
@@ -12,6 +10,7 @@ services:
       - "9300:9300"
     volumes:
       - elasticsearch_data:/usr/share/elasticsearch/data
+    mem_limit: 8g
 
   ollama:
     image: ollama/ollama
@@ -72,3 +71,7 @@ volumes:
   ollama_data:
   postgres_data:
   grafana_data:
+
+
+networks:
+  my_network:

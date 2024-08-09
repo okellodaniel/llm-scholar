@@ -93,6 +93,7 @@ def main():
     ground_truth = fetch_ground_truth()
     model = load_model()
     es_client = setup_elasticsearch()
+
     index_documents(es_client, documents, model)
     # you may consider to comment <end>
 
