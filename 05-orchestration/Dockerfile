@@ -16,4 +16,7 @@ RUN pip3 install --no-cache-dir "git+https://github.com/mage-ai/mage-ai.git@td--
 
 ENV PYTHONPATH="${PYTHONPATH}:${MAGE_CODE_PATH}/${PROJECT_NAME}"
 
-CMD ["/bin/sh", "-c", "/app/run_app.sh"]
+# CMD ["/bin/sh", "-c", "/app/run_app.sh"]
+
+CMD ["/bin/sh", "-c", "/home/src/llm/run_app.sh"]
+
