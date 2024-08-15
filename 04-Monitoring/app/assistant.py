@@ -82,9 +82,9 @@ CONTEXT:
 
 def llm(prompt, model_choice):
     start_time = time.time()
-    if model_choice.startswith('ollama/'):
+    if model_choice == 'ollama':
         response = ollama_client.chat.completions.create(
-            model=model_choice.split('/')[-1],
+            model='phi3',
             messages=[{"role": "user", "content": prompt}]
         )
         answer = response.choices[0].message.content
