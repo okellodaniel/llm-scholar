@@ -105,6 +105,12 @@ def save_feedback(conversation_id, feedback, timestamp=None):
     conn = get_db_connection()
     try:
         with conn.cursor() as cur:
+            cur.execute("SELECT 1 FROM conversations WHERE id = %s", (conversation_id,))
+            
+            if cur.fetchone() is None:
+                raise ValueError(f"Conversation ID {conversation_id} does not exist in the conversations table.")
+            
+            # Insert feedback if the conversation exists
             cur.execute(
                 "INSERT INTO feedback (conversation_id, feedback, timestamp) VALUES (%s, %s, COALESCE(%s, CURRENT_TIMESTAMP))",
                 (conversation_id, feedback, timestamp),
@@ -129,6 +135,18 @@ def get_recent_conversations(limit=5, relevance=None):
 
             cur.execute(query, (limit,))
             return cur.fetchall()
+    finally:
+        conn.close()
+
+def clear_conversation(conversation_id):
+    conn = get_db_connection()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("DELETE FROM feedback WHERE conversation_id = %s", (conversation_id,))
+            cur.execute("DELETE FROM conversations WHERE id = %s", (conversation_id,))
+        conn.commit()
+    except Exception as e:
+        print(f"Error clearing conversation: {e}")
     finally:
         conn.close()
 

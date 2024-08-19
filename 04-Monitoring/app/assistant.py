@@ -82,9 +82,9 @@ CONTEXT:
 
 def llm(prompt, model_choice):
     start_time = time.time()
-    if model_choice == 'ollama':
+    if model_choice == 'ollama/phi3':
         response = ollama_client.chat.completions.create(
-            model='phi3',
+            model='phi3:mini',
             messages=[{"role": "user", "content": prompt}]
         )
         answer = response.choices[0].message.content
