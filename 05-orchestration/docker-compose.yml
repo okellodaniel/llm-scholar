@@ -7,15 +7,11 @@ services:
     command: /app/run_app.sh mage start $PROJECT_NAME
     ports:
       - "6789:6789"
-    # volumes:
-    #   # Mount your local codebase to the container.
-    #   - .:/${MAGE_CODE_PATH:-/app}
-    #   # Store the data output on local machine to easily debug (optional).
-    #   - ~/.mage_data:/${MAGE_CODE_PATH:-/app}/mage_data
     volumes:
-      - .:/home/src
-      - ~/.mage_data:/home/src/mage_data
-
+      # Mount your local codebase to the container.
+      - .:/$MAGE_CODE_PATH
+      # Store the data output on local machine to easily debug (optional).
+      - ~/.mage_data:/$MAGE_CODE_PATH/mage_data
     restart: on-failure:5
     networks:
       - app-network
@@ -43,6 +39,7 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
     ports:
       - "9200:9200"
       - "9300:9300"
