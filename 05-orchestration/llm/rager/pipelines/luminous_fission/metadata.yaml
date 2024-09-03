@@ -1,0 +1,167 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1724378900
+      name: radiant_vanguard.py
+      output: null
+      path: /home/src/llm/rager/data_loaders/radiant_vanguard.py
+      relative_path: llm/rager/data_loaders/radiant_vanguard.py
+      size: 1550
+    file_source:
+      path: rager/data_loaders/radiant_vanguard.py
+    templates:
+      api:
+        variables:
+          auth_token: null
+          endpoint: https://raw.githubusercontent.com/DataTalksClub/llm-zoomcamp/main/01-intro/documents.json
+          method: GET
+          parser: null
+          timeout: 30
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - ingest
+  has_callback: false
+  language: python
+  name: Radiant vanguard
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: radiant_vanguard
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/transdimensional_rune.py
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - chunking
+  has_callback: false
+  language: python
+  name: Transdimensional rune
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: transdimensional_rune
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/translucent_stellar.py
+    templates:
+      sentence_spacy:
+        variables:
+          language: en
+          strip_whitespace: true
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - tokenization
+  has_callback: false
+  language: python
+  name: Translucent stellar
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: translucent_stellar
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source:
+      path: rager/transformers/refulgent_ephemera.py
+    templates:
+      spacy_embeddings:
+        variables:
+          model_name: en_core_web_sm
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - embed
+  has_callback: false
+  language: python
+  name: Refulgent ephemera
+  retry_config: null
+  status: failed
+  timeout: null
+  type: transformer
+  upstream_blocks: []
+  uuid: refulgent_ephemera
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file:
+      content: null
+      extension: py
+      language: python
+      modified_timestamp: 1724381721
+      name: titanic_wraith.py
+      output: null
+      path: /home/src/llm/rager/data_exporters/titanic_wraith.py
+      relative_path: llm/rager/data_exporters/titanic_wraith.py
+      size: 2054
+    file_source:
+      path: rager/data_exporters/titanic_wraith.py
+    templates:
+      elasticsearch:
+        variables:
+          connection_string: http://elasticsearch:9200
+          dimensions: null
+          index_name: documents
+          number_of_replicas: 0
+          number_of_shards: 1
+          vector_column_name: embedding
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  groups:
+  - vector_database
+  has_callback: false
+  language: python
+  name: Titanic wraith
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks: []
+  uuid: titanic_wraith
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-08-23 02:08:00.513844+00:00'
+data_integration: null
+description: null
+execution_framework: rag
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Luminous fission
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+uuid: luminous_fission
+variables_dir: /home/src/mage_data/rager
+widgets: []
